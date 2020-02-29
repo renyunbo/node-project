@@ -13,4 +13,4 @@
 
     nrm -h nrm命令
 
-    nrm current 显示当前nrm用的是哪个镜像
+    nrm current 显示当前nrm用的是哪个镜像 

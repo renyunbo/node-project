@@ -1,0 +1,16 @@
+安装 nrm 
+    npm install nrm -g
+
+    nrm ls nrm内置的源
+
+        npm ---- https://registry.npmjs.org/
+        cnpm --- http://r.cnpmjs.org/
+        taobao - https://registry.npm.taobao.org/
+        nj ----- https://registry.nodejitsu.com/
+        rednpm - http://registry.mirror.cqupt.edu.cn/
+        npmMirror  https://skimdb.npmjs.com/registry/
+        edunpm - http://registry.enpmjs.org/
+
+    nrm -h nrm命令
+
+    nrm current 显示当前nrm用的是哪个镜像

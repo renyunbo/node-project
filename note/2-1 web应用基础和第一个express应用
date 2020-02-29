@@ -1,3 +1,7 @@
+nvm     管理node版本
+nrm     npm源问题
+nodemon 监听文件变化，自动重启服务
+
 const express =require('express');
 
 //是一个express实例

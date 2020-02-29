@@ -1,3 +1,4 @@
+https://www.imooc.com/video/20683视频地址
 开启debug模式
     "start":"DEBUG=* nodemon src/app.js"
 配置nodemon

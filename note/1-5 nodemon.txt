@@ -1,5 +1,5 @@
 https://www.imooc.com/video/20683视频地址
-开启debug模式
+开启debug模式(node模块支持)
     "start":"DEBUG=* nodemon src/app.js"
 配置nodemon
     1.npm install nodemon -D

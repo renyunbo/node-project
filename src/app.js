@@ -1,25 +1,36 @@
-const express =require('express');
+const express = require('express');
 
-//是一个express实例
 const app = express();
-// app.use((req,res)=>{
-//     res.json({
-//         'name':'张三'
-//     });
-// });
 
-app.get('/name/:age',(req,res)=>{
-    const {age} = req.params;//获取URL参数
-
+//1.通过请求的方法类型get/post/put/delete
+app.get('/demo',(req,res)=>{
+    //req:请求对象
+    //res:服务响应对象
     res.json({
-        age:age,
-        name:'tom'
+        message:'this is a test'
+    });
+});
+app.post('/demo',(req,res)=>{
+    //req:请求对象
+    //res:服务响应对象
+    res.json({
+        message:'this is a test'
+    });
+});
+//2.通过URI
+app.get('/user/byname',(req,res)=>{
+    const {name} = req.query;
+    res.json({
+        name
+    });
+});
+app.get('/user/byid',(req,res)=>{
+    const {id}=req.query;
+    res.json({
+        id
     });
 });
 
-app.post('/name',(req,res)=>{
-    res.send('tom post');
-});
 app.listen(3000,()=>{
-    console.log('server 启动成功');
+    console.log('服务器启动成功');
 });

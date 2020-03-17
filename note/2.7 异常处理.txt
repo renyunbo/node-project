@@ -1,7 +1,4 @@
-const express = require('express');
-
-const app = express();
-
+异常捕获
 app.get('/demo',(req,res)=>{
     throw new Error('测试异常');
 
@@ -10,6 +7,11 @@ app.get('/demo',(req,res)=>{
     // });
 });
 
+
+express内置异常处理
+
+
+自定义异常处理
 function error_handler_middleware(err,req,res,next){
     if(err){
         res.status(500)
@@ -29,6 +31,3 @@ function not_found_handler(req,res,next){
 
 app.use(not_found_handler);
 app.use(error_handler_middleware);
-app.listen(3000,()=>{
-    console.log('服务器启动成功！');
-});

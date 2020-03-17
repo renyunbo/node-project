@@ -1,0 +1,20 @@
+中间件介绍和使用
+1.什么是express中间件
+2.内置中间件和第三方中间件介绍
+3.自定义中间件
+
+中间件
+    1.app级别的使用
+        //app级别的中间件
+        function log_middleware(req,res,next){
+            console.log('请求进来了！');
+        }
+        app.use(log_middleware);
+    2.router级别
+    3.异常处理-->app级别-->router
+
+    
+//加载一个static中间件 index.html
+app.use(express.static('static',{
+    extensions:['html,htm],
+}));

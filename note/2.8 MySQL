@@ -1,0 +1,14 @@
+1.参考文档：https://www.runoob.com/mysql/mysql-administration.html
+2.启动：mysql -u root -p
+3.客户端：Navicat Premium
+
+1.mysql  --> 结构化数据库中的一种
+2.mysql  --> 服务，提供了数据存放的服务
+    数据库：划分的存储区域
+    table:
+        [
+            {
+                id:'11',
+                name:'计算机编程',
+            }
+        ]

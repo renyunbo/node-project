@@ -12,3 +12,4 @@
                 name:'计算机编程',
             }
         ]
+node-application --- ORM（Sequelize）--> 驱动(node-mysql) 安装mysql2

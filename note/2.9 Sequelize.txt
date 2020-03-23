@@ -1,3 +1,15 @@
+参考文档:
+https://www.jianshu.com/p/8133e6c92a16
+https://sequelize.org/master/manual/migrations.html
+什么是ORM
+    对象关系模型
+
+Sequelize作用
+
+
+
+在nodejs中集成Sequelize
+
 const express = require('express');
 
 const app = express();

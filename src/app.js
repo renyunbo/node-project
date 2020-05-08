@@ -6,7 +6,7 @@ const modules = require('../models');//对象模型
 
 app.get('/create',async(req,res)=>{
     let {name} = req.query;
-
+    //promise user-->sequlize对象
     let user =await modules.User.create({
         name
     });
@@ -23,6 +23,7 @@ app.get('/list',async(req,res)=>{
         list
     });
 });
+
 
 app.get('/detail/:id',async(req,res)=>{
     let {id} = req.params;
